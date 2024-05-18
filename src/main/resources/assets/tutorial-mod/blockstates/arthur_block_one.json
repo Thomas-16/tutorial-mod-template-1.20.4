@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "tutorial-mod:block/arthur_block_one"
+    }
+  }
+}

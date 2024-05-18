@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "RRR",
+    "RRR",
+    "RRR"
+  ],
+  "key": {
+    "R": {
+      "item": "tutorial-mod:ruby"
+    }
+  },
+  "result": {
+    "item": "tutorial-mod:ruby_block"
+  }
+}

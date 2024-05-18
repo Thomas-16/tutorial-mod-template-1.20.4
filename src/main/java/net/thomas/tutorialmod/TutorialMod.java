@@ -2,6 +2,7 @@ package net.thomas.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.thomas.tutorialmod.block.ModBlocks;
 import net.thomas.tutorialmod.item.ModItemGroups;
 import net.thomas.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
@@ -13,8 +14,10 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
 		ModItemGroups.registerItemGroups();
+
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+
 	}
 }
