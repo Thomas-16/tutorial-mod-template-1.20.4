@@ -7,6 +7,10 @@
   "block.tutorial-mod.chaewon_block": "Block of Chaewon",
   "block.tutorial-mod.arthur_block_one": "Block of Arthur 1",
   "block.tutorial-mod.arthur_block_two": "Block of Arthur 2",
+  "block.tutorial-mod.ruby_ore": "Ruby Ore",
+  "block.tutorial-mod.deepslate_ruby_ore": "Deepslate Ruby Ore",
+  "block.tutorial-mod.nether_ruby_ore": "Nether Ruby Ore",
+  "block.tutorial-mod.end_stone_ruby_ore": "End Stone Ruby Ore",
 
-  "itemgroup.custom": "Custom Group"
+  "itemgroup.skibidi": "Skibidi Group"
 }

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "tutorial-mod:block/nether_ruby_ore"
+    }
+  }
+}

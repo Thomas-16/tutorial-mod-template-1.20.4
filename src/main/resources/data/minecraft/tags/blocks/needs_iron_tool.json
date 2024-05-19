@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "tutorial-mod:ruby_block",
+    "tutorial-mod:raw_ruby_block",
+    "tutorial-mod:chaewon_block",
+    "tutorial-mod:arthur_block_one",
+    "tutorial-mod:arthur_block_two"
+  ]
+}

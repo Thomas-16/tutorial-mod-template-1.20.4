@@ -12,7 +12,7 @@ import net.thomas.tutorialmod.block.ModBlocks;
 
 public class ModItemGroups {
     public static final ItemGroup RUBY_GROUP = Registry.register(Registries.ITEM_GROUP, new Identifier(TutorialMod.MOD_ID, "ruby"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.custom")).icon(() -> new ItemStack(ModItems.RUBY)).entries((displayContext, entries) -> {
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.skibidi")).icon(() -> new ItemStack(ModItems.RUBY)).entries((displayContext, entries) -> {
                 entries.add(ModItems.RUBY);
                 entries.add(ModItems.RAW_RUBY);
 
@@ -21,6 +21,10 @@ public class ModItemGroups {
                 entries.add(ModBlocks.CHAEWON_BLOCK);
                 entries.add(ModBlocks.ARTHUR_BLOCK_ONE);
                 entries.add(ModBlocks.ARTHUR_BLOCK_TWO);
+                entries.add(ModBlocks.RUBY_ORE);
+                entries.add(ModBlocks.DEEPSLATE_RUBY_ORE);
+                entries.add(ModBlocks.END_STONE_RUBY_ORE);
+                entries.add(ModBlocks.NETHER_RUBY_ORE);
 
             }).build());
 
