@@ -47,7 +47,7 @@ public class ModBlocks {
             new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
                     FabricBlockSettings.copyOf(Blocks.NETHERRACK).strength(1.5f)));
     public static final Block END_STONE_RUBY_ORE = registerBlock("end_stone_ruby_ore",
-            new ExperienceDroppingBlock(UniformIntProvider.create(4, 7), 
+            new ExperienceDroppingBlock(UniformIntProvider.create(4, 7),
                     FabricBlockSettings.copyOf(Blocks.END_STONE).strength(4f)));
 
     private static Block registerBlock(String name, Block block){
