@@ -15,28 +15,24 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.thomas.tutorialmod.TutorialMod;
+import net.thomas.tutorialmod.block.custom.SoundBlock;
 
 public class ModBlocks {
-    public static final Block RUBY_BLOCK = registerBlock("ruby_block",
-            new Block(FabricBlockSettings.copyOf(
-                    Blocks.register("ruby_block", new Block(FabricBlockSettings.create().mapColor(MapColor.RED).
-                            instrument(Instrument.IRON_XYLOPHONE).requiresTool().strength(5.0f, 6.0f).sounds(BlockSoundGroup.METAL))))));
-    public static final Block RAW_RUBY_BLOCK = registerBlock("raw_ruby_block",
-            new Block(FabricBlockSettings.copyOf(
-                    Blocks.register("raw_ruby_block", new Block(FabricBlockSettings.create().mapColor(MapColor.RED).
-                            instrument(Instrument.IRON_XYLOPHONE).requiresTool().strength(5.0f, 6.0f).sounds(BlockSoundGroup.METAL))))));
-    public static final Block CHAEWON_BLOCK = registerBlock("chaewon_block",
-            new Block(FabricBlockSettings.copyOf(
-                    Blocks.register("chaewon_block", new Block(FabricBlockSettings.create().mapColor(MapColor.WHITE).
-                            instrument(Instrument.IRON_XYLOPHONE).requiresTool().strength(5.0f, 6.0f).sounds(BlockSoundGroup.METAL))))));
-    public static final Block ARTHUR_BLOCK_ONE = registerBlock("arthur_block_one",
-            new Block(FabricBlockSettings.copyOf(
-                    Blocks.register("arthur_block_one", new Block(FabricBlockSettings.create().mapColor(MapColor.YELLOW).
-                            instrument(Instrument.IRON_XYLOPHONE).requiresTool().strength(5.0f, 6.0f).sounds(BlockSoundGroup.METAL))))));
-    public static final Block ARTHUR_BLOCK_TWO = registerBlock("arthur_block_two",
-            new Block(FabricBlockSettings.copyOf(
-                    Blocks.register("arthur_block_two", new Block(FabricBlockSettings.create().mapColor(MapColor.YELLOW).
-                            instrument(Instrument.IRON_XYLOPHONE).requiresTool().strength(5.0f, 6.0f).sounds(BlockSoundGroup.METAL))))));
+    public static final Block RUBY_BLOCK = registerBlock("ruby_block", new Block(FabricBlockSettings.copyOf(
+            Blocks.register("ruby_block", new Block(FabricBlockSettings.create().mapColor(MapColor.RED).
+                    instrument(Instrument.IRON_XYLOPHONE).requiresTool().strength(5.0f, 6.0f).sounds(BlockSoundGroup.METAL))))));
+    public static final Block RAW_RUBY_BLOCK = registerBlock("raw_ruby_block", new Block(FabricBlockSettings.copyOf(
+            Blocks.register("raw_ruby_block", new Block(FabricBlockSettings.create().mapColor(MapColor.RED).
+                    instrument(Instrument.IRON_XYLOPHONE).requiresTool().strength(5.0f, 6.0f).sounds(BlockSoundGroup.METAL))))));
+    public static final Block CHAEWON_BLOCK = registerBlock("chaewon_block", new Block(FabricBlockSettings.copyOf(
+            Blocks.register("chaewon_block", new Block(FabricBlockSettings.create().mapColor(MapColor.WHITE).
+                    instrument(Instrument.IRON_XYLOPHONE).requiresTool().strength(5.0f, 6.0f).sounds(BlockSoundGroup.METAL))))));
+    public static final Block ARTHUR_BLOCK_ONE = registerBlock("arthur_block_one", new Block(FabricBlockSettings.copyOf(
+            Blocks.register("arthur_block_one", new Block(FabricBlockSettings.create().mapColor(MapColor.YELLOW).
+                    instrument(Instrument.IRON_XYLOPHONE).requiresTool().strength(5.0f, 6.0f).sounds(BlockSoundGroup.METAL))))));
+    public static final Block ARTHUR_BLOCK_TWO = registerBlock("arthur_block_two", new Block(FabricBlockSettings.copyOf(
+            Blocks.register("arthur_block_two", new Block(FabricBlockSettings.create().mapColor(MapColor.YELLOW).
+                    instrument(Instrument.IRON_XYLOPHONE).requiresTool().strength(5.0f, 6.0f).sounds(BlockSoundGroup.METAL))))));
     public static final Block RUBY_ORE = registerBlock("ruby_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
                     FabricBlockSettings.copyOf(Blocks.STONE).strength(2f)));
@@ -49,6 +45,9 @@ public class ModBlocks {
     public static final Block END_STONE_RUBY_ORE = registerBlock("end_stone_ruby_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(4, 7),
                     FabricBlockSettings.copyOf(Blocks.END_STONE).strength(4f)));
+    public static final Block SOUND_BLOCK = registerBlock("sound_block", new SoundBlock(FabricBlockSettings.copyOf(
+            Blocks.register("arthur_block_two", new Block(FabricBlockSettings.create().mapColor(MapColor.WHITE).
+                    instrument(Instrument.IRON_XYLOPHONE).requiresTool().strength(5.0f, 6.0f).sounds(BlockSoundGroup.METAL))))));
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);

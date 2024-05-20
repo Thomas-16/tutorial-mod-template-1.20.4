@@ -1,6 +1,8 @@
 {
   "item.tutorial-mod.ruby": "Ruby",
   "item.tutorial-mod.raw_ruby": "Raw Ruby",
+  "item.tutorial-mod.metal_detector": "Metal Detector",
+  "item.tutorial-mod.kaboom": "KABOOM ALLAHU AKBARRRR",
 
   "block.tutorial-mod.ruby_block": "Block of Ruby",
   "block.tutorial-mod.raw_ruby_block": "Block of Raw Ruby",
@@ -11,6 +13,7 @@
   "block.tutorial-mod.deepslate_ruby_ore": "Deepslate Ruby Ore",
   "block.tutorial-mod.nether_ruby_ore": "Nether Ruby Ore",
   "block.tutorial-mod.end_stone_ruby_ore": "End Stone Ruby Ore",
+  "block.tutorial-mod.sound_block": "Sound Block",
 
   "itemgroup.skibidi": "Skibidi Group"
 }
