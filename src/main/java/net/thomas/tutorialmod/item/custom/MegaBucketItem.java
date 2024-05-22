@@ -34,7 +34,6 @@ public class MegaBucketItem extends Item {
         isClearingWater = false;
         blocksToClear = new ArrayList<BlockPos>();
     }
-
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
         if (world.isClient()){
@@ -46,7 +45,6 @@ public class MegaBucketItem extends Item {
                     continue;
                 }
                 world.setBlockState(blockPos, Blocks.AIR.getDefaultState());
-
             }
             int n = blocksToClear.size();
             for (int i = 0; i < n; i++) {
@@ -81,7 +79,6 @@ public class MegaBucketItem extends Item {
             }
         }
     }
-
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         ItemStack itemStack = user.getStackInHand(hand);
