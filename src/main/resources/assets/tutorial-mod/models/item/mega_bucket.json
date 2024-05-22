@@ -1,0 +1,26 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "tutorial-mod:item/mega_bucket"
+  },
+	"display": {
+        "ground": {
+            "translation": [ 0, 3, 0],
+            "scale":[ 2, 2, 2 ]
+        },
+        "thirdperson_righthand": {
+            "translation": [ 0, 15, 2 ],
+            "scale": [ 2.0, 2.0, 2.0 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 90, 40 ],
+            "translation": [ 0, 15, 2 ],
+            "scale": [ 2.0, 2.0, 2.0 ]
+        },
+        "firstperson_lefthand": {
+            "rotation": [ 0, 90, 40 ],
+            "translation": [ 0, 15, 2 ],
+            "scale": [ 2.0, 2.0, 2.0 ]
+        }
+    }
+}

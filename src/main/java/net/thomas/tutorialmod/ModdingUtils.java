@@ -25,4 +25,8 @@ public class ModdingUtils {
         MinecraftClient client = MinecraftClient.getInstance();
         return client.cameraEntity.raycast(maxReach, 1.0F, includeFluids);
     }
+    public static HitResult playerReachRayCast(){
+        MinecraftClient client = MinecraftClient.getInstance();
+        return client.crosshairTarget;
+    }
 }

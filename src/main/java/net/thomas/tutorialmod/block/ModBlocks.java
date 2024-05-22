@@ -46,7 +46,7 @@ public class ModBlocks {
             new ExperienceDroppingBlock(UniformIntProvider.create(4, 7),
                     FabricBlockSettings.copyOf(Blocks.END_STONE).strength(4f)));
     public static final Block SOUND_BLOCK = registerBlock("sound_block", new SoundBlock(FabricBlockSettings.copyOf(
-            Blocks.register("arthur_block_two", new Block(FabricBlockSettings.create().mapColor(MapColor.WHITE).
+            Blocks.register("sound_block", new SoundBlock(FabricBlockSettings.create().mapColor(MapColor.WHITE).
                     instrument(Instrument.IRON_XYLOPHONE).requiresTool().strength(5.0f, 6.0f).sounds(BlockSoundGroup.METAL))))));
 
     private static Block registerBlock(String name, Block block){
