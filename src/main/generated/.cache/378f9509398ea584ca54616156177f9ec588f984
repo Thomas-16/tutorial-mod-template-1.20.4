@@ -1,0 +1,11 @@
+// 1.20.4	2024-05-22T21:52:46.3327961	Tutorial Mod/Block Loot Tables
+77ca2ffc2594346c9dc89680c3dc1b67f949ea26 data\tutorial-mod\loot_tables\blocks\arthur_block_two.json
+011a0bfa3454f44a04ede4895cd1220d02a899da data\tutorial-mod\loot_tables\blocks\raw_ruby_block.json
+f771420b34cd5f6951a6e8bf550eed044a3307f7 data\tutorial-mod\loot_tables\blocks\ruby_ore.json
+79d96d8913ca0b9bc18fe2d053c11e243dd1789f data\tutorial-mod\loot_tables\blocks\chaewon_block.json
+a2af49b7569db7186fd20c35626ede7df9704957 data\tutorial-mod\loot_tables\blocks\deepslate_ruby_ore.json
+806d9aabf468ba6a09a02b0aeaf2ea1c931ae07d data\tutorial-mod\loot_tables\blocks\nether_ruby_ore.json
+3258a64755c9205400d6cab506c8faf730681a1a data\tutorial-mod\loot_tables\blocks\end_stone_ruby_ore.json
+2ea4eb83e390ca164b2c117407327b4016033757 data\tutorial-mod\loot_tables\blocks\ruby_block.json
+6ed98d08e4524d39125e267952e6df39014e0c5b data\tutorial-mod\loot_tables\blocks\sound_block.json
+6880fb2bf88babb736260a2dc4df28c8cdeb8dec data\tutorial-mod\loot_tables\blocks\arthur_block_one.json
