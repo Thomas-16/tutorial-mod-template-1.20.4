@@ -20,6 +20,7 @@ public class ModItemGroups {
                 entries.add(ModItems.MEGA_BUCKET);
                 entries.add(ModItems.MAGNIFYING_GLASS);
                 entries.add(ModItems.TOMATO);
+                entries.add(ModItems.COAL_BRIQUETTE);
 
                 entries.add(ModBlocks.RUBY_BLOCK);
                 entries.add(ModBlocks.RAW_RUBY_BLOCK);

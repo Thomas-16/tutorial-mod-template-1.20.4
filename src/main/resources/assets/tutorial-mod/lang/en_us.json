@@ -6,6 +6,7 @@
   "item.tutorial-mod.mega_bucket": "MEGA BUCKET",
   "item.tutorial-mod.magnifying_glass": "Magnifying Glass",
   "item.tutorial-mod.tomato": "Tomato",
+  "item.tutorial-mod.coal_briquette": "Coal Briquette",
 
   "block.tutorial-mod.ruby_block": "Block of Ruby",
   "block.tutorial-mod.raw_ruby_block": "Block of Raw Ruby",
@@ -17,6 +18,8 @@
   "block.tutorial-mod.nether_ruby_ore": "Nether Ruby Ore",
   "block.tutorial-mod.end_stone_ruby_ore": "End Stone Ruby Ore",
   "block.tutorial-mod.sound_block": "Sound Block",
+
+  "tooltip.tutorial-mod.mega_bucket.tooltip": "moses type shi",
 
   "itemgroup.skibidi": "Skibidi Group"
 }

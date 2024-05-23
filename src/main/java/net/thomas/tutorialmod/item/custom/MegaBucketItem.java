@@ -3,6 +3,7 @@ package net.thomas.tutorialmod.item.custom;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.Waterloggable;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -21,8 +22,10 @@ import net.minecraft.util.hit.HitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.RaycastContext;
 import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class MegaBucketItem extends Item {
     private static final int MAX_BLOCKS_CLEARING = 50000;
@@ -110,6 +113,13 @@ public class MegaBucketItem extends Item {
         isClearingWater = true;
         blocksToClear.add(startingPos);
     }
+
+    @Override
+    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+        tooltip.add(Text.translatable("tooltip.tutorial-mod.mega_bucket.tooltip"));
+        super.appendTooltip(stack, world, tooltip, context);
+    }
+
     private boolean isAllAir(World world){
         for(BlockPos blockPos : blocksToClear){
             if(shouldBeCleared(world.getBlockState(blockPos))){
@@ -118,7 +128,6 @@ public class MegaBucketItem extends Item {
         }
         return true;
     }
-
     private boolean shouldBeCleared(BlockState blockState) {
         return blockState.isLiquid() ||
                 !blockState.getFluidState().isOf(Fluids.EMPTY);
