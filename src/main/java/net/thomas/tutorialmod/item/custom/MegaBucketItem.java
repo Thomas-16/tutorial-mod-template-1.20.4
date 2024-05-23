@@ -84,11 +84,11 @@ public class MegaBucketItem extends Item {
         ItemStack itemStack = user.getStackInHand(hand);
 
         if (!world.isClient()) {
-            BlockHitResult blockHit = BucketItem.raycast(world, user, RaycastContext.FluidHandling.SOURCE_ONLY);
+            BlockHitResult blockHit = BucketItem.raycast(world, user, RaycastContext.FluidHandling.ANY);
             if (blockHit.getType() == HitResult.Type.BLOCK) {
                 BlockPos blockPos = blockHit.getBlockPos();
                 BlockState blockState = world.getBlockState(blockPos);
-                if (blockState.isLiquid()) {
+                if (!blockState.getFluidState().isOf(Fluids.EMPTY)) {
 //                    user.sendMessage(Text.literal("clicked water"));
                     if (!isClearingWater) {
                         user.sendMessage(Text.literal("parting the red sea"));
