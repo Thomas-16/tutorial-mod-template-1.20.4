@@ -10,7 +10,7 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.hit.HitResult;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
-import net.thomas.tutorialmod.ModdingUtils;
+import net.thomas.tutorialmod.util.ModdingUtils;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;

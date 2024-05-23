@@ -11,6 +11,7 @@ import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
+import net.thomas.tutorialmod.util.ModTags;
 
 import java.util.AbstractMap;
 import java.util.ArrayList;
@@ -87,7 +88,7 @@ public class MetalDetectorItem extends Item {
         return ActionResult.SUCCESS;
     }
     private boolean isBlockValuable(BlockState state) {
-        return state.getBlock().getName().getString().toUpperCase().contains("ORE");
+        return state.isIn(ModTags.Blocks.METAL_DETECTOR_DETECTABLE_BLOCKS);
     }
     private boolean tupleListContainsElement(ArrayList<Map.Entry<BlockState, Integer>> list, BlockState state){
         for(Map.Entry<BlockState, Integer> entry : list){
