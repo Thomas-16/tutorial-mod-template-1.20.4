@@ -37,5 +37,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.TOMATO, Models.GENERATED);
         itemModelGenerator.register(ModItems.METAL_DETECTOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.MEGA_BUCKET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SATISFYING_ELYTRA, Models.GENERATED);
     }
 }

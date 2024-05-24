@@ -9,10 +9,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.thomas.tutorialmod.TutorialMod;
-import net.thomas.tutorialmod.item.custom.KaboomItem;
-import net.thomas.tutorialmod.item.custom.MagnifyingGlassItem;
-import net.thomas.tutorialmod.item.custom.MegaBucketItem;
-import net.thomas.tutorialmod.item.custom.MetalDetectorItem;
+import net.thomas.tutorialmod.item.custom.*;
 
 public class ModItems {
     public static final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings()));
@@ -23,6 +20,7 @@ public class ModItems {
     public static final Item MAGNIFYING_GLASS = registerItem("magnifying_glass", new MagnifyingGlassItem(new FabricItemSettings()));
     public static final Item TOMATO = registerItem("tomato", new Item(new FabricItemSettings().food(ModFoodComponents.TOMATO)));
     public static final Item COAL_BRIQUETTE = registerItem("coal_briquette", new Item(new FabricItemSettings()));
+    public static final Item SATISFYING_ELYTRA = registerItem("satisfying_elytra", new SatisfyingElytraItem(new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries){
         entries.add(RUBY);
@@ -35,6 +33,7 @@ public class ModItems {
         entries.add(KABOOM);
         entries.add(MEGA_BUCKET);
         entries.add(MAGNIFYING_GLASS);
+        entries.add(SATISFYING_ELYTRA);
     }
 
     private static Item registerItem(String name, Item item){

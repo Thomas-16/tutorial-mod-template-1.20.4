@@ -38,5 +38,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.STONE), conditionsFromItem(Items.STONE))
                 .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.RAW_RUBY)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TRANSPORTATION, ModItems.SATISFYING_ELYTRA, 1)
+                .pattern("NNN")
+                .pattern("NEN")
+                .pattern("NNN")
+                .input('N', Items.NETHERITE_BLOCK)
+                .input('E', Items.ELYTRA)
+                .criterion(hasItem(Items.ELYTRA), conditionsFromItem(Items.ELYTRA))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SATISFYING_ELYTRA)));
+
     }
 }
