@@ -43,7 +43,16 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.RUBY_ORE)
                 .add(ModBlocks.DEEPSLATE_RUBY_ORE)
                 .add(ModBlocks.NETHER_RUBY_ORE)
-                .add(ModBlocks.END_STONE_RUBY_ORE);
+                .add(ModBlocks.END_STONE_RUBY_ORE)
+                .add(ModBlocks.RUBY_STAIRS)
+                .add(ModBlocks.RUBY_SLAB)
+                .add(ModBlocks.RUBY_BUTTON)
+                .add(ModBlocks.RUBY_PRESSURE_PLATE)
+                .add(ModBlocks.RUBY_FENCE)
+                .add(ModBlocks.RUBY_FENCE_GATE)
+                .add(ModBlocks.RUBY_WALL)
+                .add(ModBlocks.RUBY_DOOR)
+                .add(ModBlocks.RUBY_TRAPDOOR);
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.DEEPSLATE_RUBY_ORE);
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
@@ -52,10 +61,26 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.RAW_RUBY_BLOCK)
                 .add(ModBlocks.ARTHUR_BLOCK_TWO)
                 .add(ModBlocks.ARTHUR_BLOCK_ONE)
-                .add(ModBlocks.SOUND_BLOCK);
+                .add(ModBlocks.SOUND_BLOCK)
+                .add(ModBlocks.RUBY_STAIRS)
+                .add(ModBlocks.RUBY_SLAB)
+                .add(ModBlocks.RUBY_BUTTON)
+                .add(ModBlocks.RUBY_PRESSURE_PLATE)
+                .add(ModBlocks.RUBY_FENCE)
+                .add(ModBlocks.RUBY_FENCE_GATE)
+                .add(ModBlocks.RUBY_WALL)
+                .add(ModBlocks.RUBY_DOOR)
+                .add(ModBlocks.RUBY_TRAPDOOR);
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.NETHER_RUBY_ORE);
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_4")))
                 .add(ModBlocks.END_STONE_RUBY_ORE);
+
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(ModBlocks.RUBY_FENCE);
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.RUBY_FENCE_GATE);
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.RUBY_WALL);
     }
 }

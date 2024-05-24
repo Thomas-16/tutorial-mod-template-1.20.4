@@ -6,6 +6,15 @@
     "tutorial-mod:raw_ruby_block",
     "tutorial-mod:arthur_block_two",
     "tutorial-mod:arthur_block_one",
-    "tutorial-mod:sound_block"
+    "tutorial-mod:sound_block",
+    "tutorial-mod:ruby_stairs",
+    "tutorial-mod:ruby_slab",
+    "tutorial-mod:ruby_button",
+    "tutorial-mod:ruby_pressure_plate",
+    "tutorial-mod:ruby_fence",
+    "tutorial-mod:ruby_fence_gate",
+    "tutorial-mod:ruby_wall",
+    "tutorial-mod:ruby_door",
+    "tutorial-mod:ruby_trapdoor"
   ]
 }
