@@ -1,5 +1,6 @@
 package net.thomas.tutorialmod.item.custom;
 
+import net.minecraft.block.Blocks;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -12,6 +13,7 @@ import net.minecraft.util.hit.HitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
+import net.thomas.tutorialmod.util.ModTags;
 import net.thomas.tutorialmod.util.ModdingUtils;
 import org.jetbrains.annotations.Nullable;
 
@@ -27,14 +29,8 @@ public class MagnifyingGlassItem extends Item {
         ItemStack itemStack = user.getStackInHand(hand);
 
         if (!world.isClient()) {
-            HitResult hit = ModdingUtils.cameraRayCast(1000, true);
-            int maxDistance = 200;
-            if (hit.getType() != HitResult.Type.MISS && hit.squaredDistanceTo(user) < Math.pow(maxDistance, 2)) {
-                Vec3d hitPos = hit.getPos();
-                BlockPos hitBlockPos = ((BlockHitResult) hit).getBlockPos();
-
-                user.sendMessage(Text.literal(world.getBlockState(hitBlockPos).getFluidState().toString()));
-            }
+            BlockPos blockPos = ((BlockHitResult) ModdingUtils.playerReachRayCast()).getBlockPos();
+            world.setBlockState(blockPos, Blocks.DIAMOND_BLOCK.getDefaultState());
         }
 
         return TypedActionResult.success(itemStack);
